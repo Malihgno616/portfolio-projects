@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+
+:root {
+  --font-txt: "Share Tech", sans-serif;
+  --font-title: "Jersey 10", sans-serif;
+  --color-txt: #000;
+  --color-title: #000;
+  --color1: #050426;
+  --color2: #0a0840;
+  --color3: #251973;
+  --color4: #403bbf;
+  --color5: #705fd9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6f5fd931;
+}
+
+h1 {
+  font-size: 3.25em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  text-align: center;
+}
+
+p {
+  font-family: var(--font-txt);
+  text-align: justify;
+  font-size: 2em;
+  line-height: 2;
+}
+
+p#txt-sobre {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-txt);
+  font-family: var(--font-txt);
+}
+
+header > nav {
+  font-size: 1.5em;
+  display: flex;
+  gap: 4.25em;
+  padding: 0.5em;
+  background-color: var(--color1);
+  justify-content: center;
+}
+
+nav > li > a {
+  color: var(--color5);
+  transition: all 0.2s ease;
+}
+
+nav > li > a:hover {
+  color: var(--color4);
+}
+
+section {
+  margin: 0 auto;
+}
+
+div#img-parallax {
+  background-image: url(../img/img-fundo.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-color: rgba(75, 19, 206, 0.685);
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color5);
+}
+
+#techs ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.25em;
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background-color: var(--color1);
+  padding: 0;
+}
+
+footer > #txt-footer {
+  color: white;
+  text-align: center;
+}
