@@ -5,8 +5,8 @@
 :root {
   --font-txt: "Share Tech", sans-serif;
   --font-title: "Jersey 10", sans-serif;
-  --color-txt: #000;
-  --color-title: #000;
+  --color-txt: #ffffff;
+  --color-title: #ffffff;
   --color1: #050426;
   --color2: #0a0840;
   --color3: #251973;
@@ -21,33 +21,43 @@
 }
 
 body {
-  background-color: #6f5fd931;
+  background-color: #0a0840e5;
 }
 
 h1 {
-  font-size: 3.25em;
+  font-size: 4em;
   text-align: center;
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--font-title);
+  color: var(--color5);
   text-align: center;
 }
 
 p {
   font-family: var(--font-txt);
+  color: var(--color-title);
   text-align: justify;
-  font-size: 2em;
+  font-size: 1.25em;
   line-height: 2;
+  text-align: justify;
 }
 
-p#txt-sobre {
+h1#title-sobre,
+h2#title-sobre,
+h3#title-sobre {
+  padding: 0.75em;
   text-align: center;
 }
 
@@ -57,36 +67,14 @@ a {
   font-family: var(--font-txt);
 }
 
-header > nav {
-  font-size: 1.5em;
-  display: flex;
-  gap: 4.25em;
-  padding: 0.5em;
-  background-color: var(--color1);
-  justify-content: center;
-}
-
-nav > li > a {
-  color: var(--color5);
-  transition: all 0.2s ease;
-}
-
-nav > li > a:hover {
-  color: var(--color4);
-}
-
-section {
-  margin: 0 auto;
-}
-
 div#img-parallax {
   background-image: url(../img/img-fundo.jpg);
   background-size: cover;
   background-position: top center;
-  background-color: rgba(75, 19, 206, 0.685);
+  background-color: #4b13ceaf;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  height: 50vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,12 +82,58 @@ div#img-parallax {
   color: var(--color5);
 }
 
-#techs ul {
+header > nav ul {
+  font-size: 1.5em;
+  display: flex;
+  gap: 4.25em;
+  padding: 0.5em;
+  background-color: var(--color1);
+  list-style: none;
+  justify-content: center;
+}
+
+nav > ul > li > a {
+  color: var(--color5);
+  transition: all 0.2s ease;
+}
+
+nav > ul > li > a:hover {
+  color: var(--color4);
+}
+
+section {
+  width: 500px;
+  margin: 20px auto;
+}
+
+section#techs ul {
+  margin: 10 auto;
   display: flex;
   justify-content: center;
   gap: 0.25em;
   list-style: none;
   padding: 0;
+}
+
+section.projects {
+  width: 1200px;
+  display: grid;
+  padding: 2em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  justify-items: center;
+}
+
+section.projects > div {
+  width: 300px;
+  height: 300px;
+  background-color: var(--color1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 footer {
