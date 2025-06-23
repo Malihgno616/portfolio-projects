@@ -136,6 +136,34 @@ section.projects > div {
   text-align: center;
 }
 
+.btn-projects {
+  background-color: var(--color4);
+  color: var(--color-txt);
+  padding: 0.5em;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  font-family: var(--font-txt);
+  font-size: 1.25em;
+  transition: all 0.2s ease;
+}
+
+.btn-projects:hover {
+  background-color: var(--color5);
+  color: var(--color-txt);
+}
+
+.btn-projects button {
+  background-color: transparent;
+  border: none;
+  color: var(--color-txt);
+  font-family: var(--font-txt);
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
 footer {
   background-color: var(--color1);
   padding: 0;
