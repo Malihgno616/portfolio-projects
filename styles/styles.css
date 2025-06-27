@@ -66,7 +66,7 @@ a {
   font-family: var(--font-txt);
 }
 
-div#img-parallax {
+div.img-parallax {
   background-image: url(../img/img-fundo.jpg);
   background-size: cover;
   background-position: top center;
@@ -76,15 +76,29 @@ div#img-parallax {
   height: 35vh;
   padding: 2em;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  gap: 2em;
   color: var(--color5);
 }
 
-#img-parallax .img-ackin {
-  width: 100px;
-  height: 100px;
+.img-parallax > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-parallax > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-parallax .img-ackin {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
