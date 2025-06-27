@@ -157,6 +157,10 @@ section.projects > div {
   transition: all 0.2s ease;
 }
 
+section.projects > div a:hover {
+  text-decoration: underline;
+}
+
 section.projects > div:hover {
   transform: scale(1.05);
 }
