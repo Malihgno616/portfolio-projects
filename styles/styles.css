@@ -195,11 +195,21 @@ section.projects > div:hover {
 
 section.more-projects {
   width: 1200px;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
   display: grid;
-  padding: 2em;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
   justify-items: center;
+}
+
+section.more-projects.show {
+  max-height: 2000px; 
+  padding: 2em;
+  opacity: 1;
 }
 
 section.more-projects > div {
@@ -212,7 +222,15 @@ section.more-projects > div {
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: all 0.2s ease;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+section.more-projects.show > div {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 section.more-projects > div:hover {
