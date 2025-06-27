@@ -26,7 +26,6 @@ body {
 
 h1 {
   font-size: 4em;
-  text-align: center;
 }
 
 h2 {
@@ -141,11 +140,11 @@ section.projects > div {
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: all 0.2s ease;
 }
 
 section.projects > div:hover {
   transform: scale(1.05);
-  transition: all 0.2s ease;
 }
 
 .btn-projects {
@@ -174,6 +173,32 @@ section.projects > div:hover {
   font-family: var(--font-txt);
   font-size: 1.25em;
   cursor: pointer;
+}
+
+section.more-projects {
+  width: 1200px;
+  display: grid;
+  padding: 2em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  justify-items: center;
+}
+
+section.more-projects > div {
+  width: 300px;
+  height: 300px;
+  background-color: var(--color1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+section.more-projects > div:hover {
+  transform: scale(1.05);
 }
 
 footer {
